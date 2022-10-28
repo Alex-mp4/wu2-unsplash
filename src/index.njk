@@ -2,6 +2,15 @@
 layout: base.njk
 ---
 
-<main>
-    
+<main class="html">
+    <pre class="china">
+        <h1>{{ country[0].name.official }}</h1>
+        <div class="display">
+            {{ country | dump(2) }}
+            <div class="flag">
+                {% image country[0].flags.png, "Chinese Flag" %}
+            </div>
+            {% image country[0].coatOfArms.png, "Chinese Coat of Arms", "20vw, 60vw" %}
+        </div>
+    </pre>
 </main>

@@ -6,7 +6,11 @@
     src: url("/assets/fonts/Creepster-Regular.ttf");
 }
 
-main {
+html {
+    background-color: #DE2910;
+}
+
+.main {
     font-family: "Creepster";
     background-color: black;
     color: orange;
@@ -26,11 +30,31 @@ main {
         display: flex;
         flex-direction: column;
     }
+    .display {
+        flex-direction: column-reverse;
+        font-size: xx-large;
+    }
+}
+
+.china {
+    background-color: #DE2910;
+    color: #FFDE00;
+}
+
+.flag {
+    border-style: solid;
+    border-color: #FFDE00;
+    height: 100%;
+    width: 100%;
 }
 
 picture {
     width: 100%;
     height: 100%;
+}
+
+.display {
+    display: flex;
 }
 
 img[width] {
