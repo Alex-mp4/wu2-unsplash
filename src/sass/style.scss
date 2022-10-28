@@ -21,6 +21,13 @@ main {
     gap: 0.9rem;
 }
 
+@media (max-width: 726px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 picture {
     width: 100%;
     height: 100%;
