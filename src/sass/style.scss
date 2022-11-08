@@ -31,6 +31,10 @@ h1 {
 }
 
 @media (max-width: 726px) {
+    .display {
+        display: flex;
+        flex-direction: column-reverse;
+    }
     html {
         display: flex;
     }
