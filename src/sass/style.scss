@@ -88,3 +88,44 @@ picture {
     grid-row-start: 1;
     grid-row-end: span 1;
 }
+
+.mainh {
+    font-family: "Creepster";
+    background-color: black;
+    color: orange;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+.container {
+    display: grid;
+    grid-template-columns: [first] 19% [line2] 19% [line3] 19% [line4] 19% [line5] 19%;
+    grid-template-rows: [row1-start] 50% [last-line] 50%;
+    gap: 0.9rem;
+}
+
+@media (max-width: 726px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.container picture {
+    width: 100%;
+    height: 100%;
+}
+img[width] {
+    height: 100%;
+}
+.item1h {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.item2h {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
