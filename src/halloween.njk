@@ -4,8 +4,9 @@ title: Halloween
 ---
 
 <main class="mainh">
-    <h1>Data dump</h1>
-    <p>Min github user: {{ github.login }}.</p> <!--och plats: {{ github.location }}-->
+    <nav class="hnav"><a href="/">China</a></nav>
+    <h1>Halloween Showcase</h1>
+    <!--<p>Min github user: {{ github.login }}.</p>--> <!--och plats: {{ github.location }}-->
     <div class="container">
         {% asyncAll item in unsplash.results %}
         <!-- <pre>{{ item | dump(2) }}</pre> -->
